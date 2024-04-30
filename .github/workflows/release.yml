@@ -34,7 +34,6 @@ jobs:
     strategy:
         matrix:
           project:
-            - preinstalled-server
             - preinstalled-desktop
           release:
           - noble
@@ -91,7 +90,6 @@ jobs:
           - orangepi-5-pro
 
         project:
-          - preinstalled-server
           - preinstalled-desktop
         release:
           - noble
