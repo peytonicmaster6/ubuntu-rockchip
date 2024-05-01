@@ -67,8 +67,9 @@ jobs:
       - name: Download a Build Artifact
         uses: actions/download-artifact@v4.1.7
         with:
+          name: ubuntu-noble-preinstalled-desktop-arm64-rootfs
           path: ./build/
-          run-id: 2
+          run-id: 8896455528
 
       - name: Install dependencies
         shell: bash
