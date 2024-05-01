@@ -68,8 +68,7 @@ jobs:
         uses: actions/download-artifact@v4.1.7
         with:
           name: ubuntu-noble-${{ matrix.project }}-arm64-rootfs
-          github-token: ${{ secrets.GH_PAT }} # token with actions:read permissions on target repo
-          repository: actions/toolkit
+          path: ./build/
           run-id: 2
 
       - name: Install dependencies
