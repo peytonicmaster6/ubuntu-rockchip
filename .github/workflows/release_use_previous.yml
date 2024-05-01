@@ -69,6 +69,8 @@ jobs:
         with:
           name: ubuntu-noble-${{ matrix.project }}-arm64-rootfs
           path: ./build/
+          github-token: ${{ secrets.GH_PAT }} # token with actions:read permissions on target repo
+          run-id: 8896455528
 
       - name: Install dependencies
         shell: bash
