@@ -132,7 +132,7 @@ jobs:
       - name: Build
         shell: bash
         run: |
-            sudo ./build.sh --board=${{ matrix.board }} --launchpad --release=${{ matrix.release }} ${{ matrix.project == 'preinstalled-desktop' && '--desktop-only' || matrix.project == 'preinstalled-server' && '--server-only' }}
+            sudo ./build.sh --board=${{ matrix.board }} --release=${{ matrix.release }} ${{ matrix.project == 'preinstalled-desktop' && '--desktop-only' || matrix.project == 'preinstalled-server' && '--server-only' }}
 
       - name: Upload
         if: needs.prepare_release.outputs.release_id != '' 
