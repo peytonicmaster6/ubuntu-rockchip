@@ -65,7 +65,7 @@ jobs:
         run: git lfs fetch && git lfs checkout
 
       - name: Download a Build Artifact
-        uses: actions/download-artifact@v4.1.7
+        uses: actions/download-artifact@v4
         with:
           name: ubuntu-noble-preinstalled-desktop-arm64-rootfs
           path: ./build/
